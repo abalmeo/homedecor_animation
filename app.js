@@ -1,3 +1,4 @@
 new fullpage('#homedecor', {
-  autoScrolling: true
+  autoScrolling: true,
+  navigation: true
 });
