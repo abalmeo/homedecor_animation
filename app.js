@@ -27,13 +27,14 @@ new fullpage('#homedecor', {
     // Animate section 2
     if (destination.index === 2) {
       const descriptionTwo = document.querySelector('.description-two');
+      const lamp = document.querySelector('.lamp');
 
       tl.fromTo(
         descriptionTwo,
         0.5,
-        { y: '-50', opacity: 0 },
+        { y: '50', opacity: 0 },
         { y: 0, opacity: 1 }
-      );
+      ).fromTo(lamp, 0.7, { x: '-100', opacity: 0 }, { x: 0, opacity: 0.9 });
     }
   }
 });
